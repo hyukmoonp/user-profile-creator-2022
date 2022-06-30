@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내일 소개팅</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5e0240002e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="user-profile">
+    <div class="vertical-line"></div>
+    <div class="ani-circle"></div>
+    <h2>
+      <span>PROFILE</span>
+    </h2>
+    <div class="user-profile_img-container">
+      <div class="slider-wrap"> 
+        <div class="slide"><img src="userimg/user1.jpeg" /></div>
+        <div class="slide"><img src="userimg/user2.jpg" /></div>
+        <div class="slide"><img src="userimg/user3.jpg" /></div>
+      </div>
+      <script>
+        $(function () {
+            $(".slider-wrap").slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false
+            });
+        })
+    </script>
+    </div>
+    <div class="content-divider">
+        <span class="content-divider-line"></span>
+    </div>
+    <div class="user-profile_info">
+      <ul class="info-details">
+        <li>
+          <dl>
+            <dt>나이</dt>
+            <dd id="age">29 (만 27)</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>지역</dt>
+            <dd id="region">서울 성북구</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>키</dt>
+            <dd id="height">181cm</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>이름</dt>
+            <dd id="name">유*혁</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>흡연여부</dt>
+            <dd id="smoking">전혀 안핀다</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>직업</dt>
+            <dd id="job">사업가</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>종교</dt>
+            <dd id="religion">무교</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>음주여부</dt>
+            <dd id="alcohol">가끔 즐긴다</dd>
+          </dl>
+        </li>
+      </ul>
+      </li>
+    </div>
+    <div class="user-profile-about">
+        <div class="about-text">ABOUT</div>
+        <div class="mini-circle"></div>
+        <div class="about-content">안녕하세요. 저는 진지한 만남을 찾으려 가입했습니다.<br>좋은 인연을 만났으면 좋겠습니다!</div>       
+    </div>
+  </body>
+  <footer>
+    <img id="logo-img" src="img/logo.png" />
+    <img id="logo-img" src="img/logo(letter).png" />
+  </footer>
+</html>

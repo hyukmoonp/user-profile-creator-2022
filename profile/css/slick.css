@@ -1,0 +1,40 @@
+/* slick */
+.slider-wrap {
+  width: 300px;
+  height: 330px;
+  border-radius: 20px;
+  position: relative;
+}
+.slider-wrap button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+}
+.slider-wrap button:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 45px;
+  color: #9499f1;
+}
+.slider-wrap button.slick-prev {
+  font-size: 0;
+  color: transparent;
+  left: -100px;
+}
+.slider-wrap button.slick-prev:before {
+  content: "\f053";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.slider-wrap button.slick-next {
+  font-size: 0;
+  color: transparent;
+  right: -100px;
+}
+.slider-wrap button.slick-next:before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
